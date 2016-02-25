@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>表格和按钮</title>
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+</head>
+
+<!-- 表格父元素设置响应式，小于768px出现边框-->
+<!--<body style="margin:50px" class="table-responsive">-->
+<body style="margin:50px" class="table-responsive">
+
+	<!--斑马线-->
+	<!-- <table class="table table-striped"> -->
+	<!-- 边框-->
+	<!-- <table class="table table-bordered"> -->
+	<!--<tr class="sr-only">		 隐藏一行-->
+	<!-- 鼠标悬停效果-->
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="info">
+				<td>1</td>
+				<td>张三</td>
+				<td>男</td>
+				<td>50</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr class="success">
+				<td>2</td>
+				<td>张三</td>
+				<td>男</td>
+				<td>50</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>3</td>
+				<td>李四</td>
+				<td>女</td>
+				<td>48</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>4</td>
+				<td>王五</td>
+				<td>男</td>
+				<td>12</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<a href="#" class="btn btn-default">Link</a>	
+	<input type="button" class="btn btn-info" value="Input">
+	<button class="btn btn-success">submit</button>
+	<button class="btn btn-warning">submit</button>
+	<button class="btn btn-success btn-lg">submit</button>
+	<button class="btn btn-success btn-sm">submit</button>
+	<button class="btn btn-success btn-xs">submit</button>
+	<!-- 块级-->
+	<button class="btn btn-success btn-block">submit</button>
+	<button class="btn btn-success active">submit</button>
+	<button class="btn btn-success disabled">submit</button>
+
+
+	<script src="../../bootstrap/js/jquery.min.js"></script>
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
