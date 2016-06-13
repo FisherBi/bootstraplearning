@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>路径分页标签和徽章组件</title>
+    <title>巨幕页头缩略图和警告框组件</title>
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <style type="text/css">
 
@@ -12,7 +12,126 @@
 
 <body style="margin: 100px">
 
+<!--一.巨幕组件-->
+<!--巨幕组件主要是展示网站的关键性区域。-->
 
+<!--在固定的范围内,有圆角-->
+<div class="container">
+    <div class="jumbotron">
+        <h2>网站标题</h2>
+        <p>这是一个学习性的网站!</p>
+        <p><a href="#" class="btn btn-default">更多内容</a></p>
+    </div>
+</div>
+
+<!--100%全屏,没有圆角-->
+<div class="jumbotron">
+    <div class="container">
+        <h2>网站标题</h2>
+        <p>这是一个学习性的网站!</p>
+        <p><a href="#" class="btn btn-default">更多内容</a></p>
+    </div>
+</div>
+
+<!--二.页头组件-->
+<!--//增加一些空间-->
+<div class="page-header">
+    <h1>大标题 <small>小标题</small></h1>
+</div>
+
+<!--三.缩略图组件-->
+<!--//缩略图配合响应式-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/e.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/e.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/e.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/pic.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--自定义内容-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/e.jpg" alt="">
+                <div class="caption">
+                    <h3>图文并茂</h3>
+                    <p>这是一个图片结合文字的缩略图</p>
+                    <p><a href="#" class="btn btn-default">进入</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/pic.png" alt="">
+                <div class="caption">
+                    <h3>图文并茂</h3>
+                    <p>这是一个图片结合文字的缩略图</p>
+                    <p><a href="#" class="btn btn-default">进入</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/pic.png" alt="">
+                <div class="caption">
+                    <h3>图文并茂</h3>
+                    <p>这是一个图片结合文字的缩略图</p>
+                    <p><a href="#" class="btn btn-default">进入</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="img/pic.png" alt="">
+                <div class="caption">
+                    <h3>图文并茂</h3>
+                    <p>这是一个图片结合文字的缩略图</p>
+                    <p><a href="#" class="btn btn-default">进入</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--四.警告框组件-->
+<!--警告框组件是一组预定义消息。-->
+<!--//基本警告框-->
+<div class="alert alert-success">Bootstrap</div>
+<div class="alert alert-info">Bootstrap</div>
+<div class="alert alert-warning">Bootstrap</div>
+<div class="alert alert-danger">Bootstrap</div>
+
+<!--带关闭的警告框-->
+<div class="alert alert-success">
+    Bootstrap
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+</div>
+
+<!--自动适配的超链接-->
+<div class="alert alert-success">
+    Bootstrap,请到官网 <a href="#" class="alert-link">下载</a>
+</div>
 
 <script src="../../bootstrap/js/jquery.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
