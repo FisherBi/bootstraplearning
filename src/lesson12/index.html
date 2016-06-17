@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>列表组面板和嵌入组件</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body style="margin: 100px">
+
+<!--一.列表组组件-->
+<!--列表组组件用于显示一组列表的组件。-->
+<!--//基本实例-->
+<!--//列表项带勋章-->
+<!--<li class="list-group-item">1.这是起始<span class="badge">10</span></li>-->
+<ul class="list-group">
+    <li class="list-group-item">1.这是起始<span class="badge">10</span></li>
+    <li class="list-group-item">2.这是第二条数据</li>
+    <li class="list-group-item">3.这是第三排信息</li>
+    <li class="list-group-item">4.这是末尾</li>
+</ul>
+
+<!--//链接和首选-->
+<div class="list-group">
+    <a href="#" class="list-group-item active">1.这是起始
+        <span class="badge">10</span></a>
+    <a href="#" class="list-group-item">2.这是第二条数据</a>
+    <a href="#" class="list-group-item">3.这是第三排信息</a>
+    <a href="#" class="list-group-item">4.这是末尾</a>
+</div>
+
+<!--//按钮式列表-->
+<div class="list-group">
+    <button class="list-group-item active">1.这是起始 <span
+            class="badge">10</span></button>
+    <button class="list-group-item">2.这是第二条数据</button>
+    <button class="list-group-item list-group-item-success">3.这是第三排信息</button>
+    <button class="list-group-item">4.这是末尾</button>
+</div>
+
+<!--//定制内容-->
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        <h4>内容标题</h4>
+        <p class="list-group-item-text">这里是相关内容详情!</p>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4>内容标题</h4>
+        <p class="list-group-item-text">这里是相关内容详情!</p>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4>内容标题</h4>
+        <p class="list-group-item-text">这里是相关内容详情!</p>
+    </a>
+</div>
+
+<!--二.面板组件-->
+<!--面板组件就是一个存放内容的容器组件。-->
+<!--//基本实例-->
+<div class="panel panel-default">
+    <div class="panel-body">
+        这里是详细内容区!
+    </div>
+</div>
+
+<!--//带标题容器的面板-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">面板标题</h3>
+    </div>
+    <div class="panel-body">
+        这里是详细内容区!
+    </div>
+    <div class="panel-footer">
+        这里是底部
+    </div>
+</div>
+
+<!--//表格类面板-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        表格标题
+    </div>
+    <div class="panel-body">
+        <p>这里是表格标题的详细内容!</p>
+    </div>
+    <table class="table">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+<!--//列表类面板-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        表格标题
+    </div>
+    <div class="panel-body">
+        <p>这里是表格标题的详细内容!</p>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">1.这里是首页</li>
+        <li class="list-group-item">2.这里是第二个项目</li>
+        <li class="list-group-item">3.这里是第三个项目</li>
+        <li class="list-group-item">4.这里是第四个项目</li>
+    </ul>
+</div>
+
+<!--三.响应式嵌入组件-->
+<!--根据被嵌入内容的外部容器的宽度,自动创建一个固定的比例,从而让浏览器自动确定-->
+<!--内容的尺寸,能够在各种设备上缩放。-->
+<!--这些规则可以直接用于<iframe>、<embed>、<video>和<object>元素。-->
+    <!--//16:9 响应式-->
+    <div class="embed-responsive embed-responsive-16by9">
+        <embed width="100%" height="100%"
+               src="http://www.tudou.com/v/OUG5JBZ8udc/&bid=05&rpid=50797543&resourceI
+d=50797543_05_05_99/v.swf" type="application/x-shockwave-flash"
+               allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></embed>
+    </div>
+
+<!--//4:3 响应式-->
+<div class="embed-responsive embed-responsive-4by3">
+    <embed width="100%" height="100%"
+           src="http://www.tudou.com/v/OUG5JBZ8udc/&bid=05&rpid=50797543&resourceI
+d=50797543_05_05_99/v.swf" type="application/x-shockwave-flash"
+           allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></embed>
+</div>
+
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
