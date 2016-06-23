@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>下拉菜单和滚动监听插件</title>
+    <title>标签页和工具提示插件</title>
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <style type="text/css">
 
@@ -12,6 +12,31 @@
 
 <body style="margin: 100px">
 
+<!--一.标签页-->
+<!--标签页也就是通常所说的选项卡功能。-->
+<!--//基本用法-->
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#html5"
+                          data-toggle="tab">HTML5</a></li>
+    <li><a href="#bootstrap" data-toggle="tab">Bootstrap</a></li>
+    <li><a href="#jquery" data-toggle="tab">jQuery</a></li>
+    <li><a href="#extjs" data-toggle="tab">ExtJS</a></li>
+</ul>
+<div class="tab-content" style="padding: 10px;">
+    <div class="tab-pane fade in active" id="html5">html15</div>
+    <div class="tab-pane" id="bootstrap">bootstrap</div>
+    <div class="tab-pane" id="jquery">jquery</div>
+    <div class="tab-pane" id="extjs">extjs</div>
+</div>
+<a href="#" rel="tooltip" data-toggle="tooltip" title="超文本标识符"
+   data-animation="false"
+   data-html="true"
+   data-placement="auto"
+   data-selector="a[rel=tooltip]"
+   data-trigger="click"
+   data-delay="500"
+   data-template="<b>123</b>"
+        >HTML5</a>
 
 
 <script src="../../bootstrap/js/jquery.min.js"></script>
