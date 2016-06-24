@@ -51,6 +51,65 @@
     加载状态
 </button>
 
+<!--二.折叠-->
+<!--通过点击可以折叠内容。-->
+<!--//基本实例-->
+<button class="btn btn-primary" data-toggle="collapse"
+        data-target="#content">
+    Bootstrap
+</button>
+<div class="collapse" id="content">
+    <div class="well">
+        Bootstrap 是 Twitter 推出的一个用于前端开发的开源工具包。它由
+        Twitter 的设计师 Mark Otto 和 Jacob Thornton 合作开发,是一个 CSS/HTML 框架。目
+        前,Bootstrap 最新版本为 3.0 。
+    </div>
+</div>
+
+<!--//手风琴折叠-->
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseOne" data-toggle="collapse"
+                   data-parent="#accordion">点击我进行展示,再点击我进行折叠,第一部分</a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                这里是第一部分。
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseTwo" data-toggle="collapse"
+                   data-parent="#accordion">点击我进行展示,再点击我进行折叠,第二部分</a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                这里是第二部分。
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#collapseThree" data-toggle="collapse"
+                   data-parent="#accordion">点击我进行展示,再点击我进行折叠,第三部分</a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                这里是第三部分。
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
 $('#myButton').on('click', function () {
 var btn = $(this).button('loading');
