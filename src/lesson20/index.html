@@ -142,6 +142,41 @@ right">
     </div>
 </div>
 
+<div class="tab2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 tab2-img">
+                <img src="img/tab2.png" alt="" class="auto img-responsive center-block">
+            </div>
+            <div class="text col-md-6 col-sm-6 tab2-text">
+                <h3>强大的学习体系</h3>
+                <p>经过管理学大师层层把关、让您的企业突飞猛进。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <img src="img/tab3.png" alt="" class="auto img-responsive center-block">
+            </div>
+            <div class="text col-md-6 col-sm-6">
+                <h3>完美的管理方式</h3>
+                <p>最新的管理培训方案，让您的企业赶超同行。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="text-muted">
+    <div class="container">
+        <p>企业培训 | 合作事宜 | 版权投诉</p>
+        <p>苏 ICP 备 12345678. © 2009-2016 瓢城企训网. Powered by Bootstrap.</p>
+    </div>
+</footer>
+
 
 <script src="../../bootstrap/js/jquery.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
@@ -150,14 +185,14 @@ right">
     $('#myCarousel').carousel({
         interval : 3000,
     });
-    //调整轮播器箭头位置
-//    $('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
-//    $(window).resize(function() {
-//        var $height = $('.carousel-inner img').eq(0).height() ||
-//                $('.carousel-inner img').eq(1).height() ||
-//                $('.carousel-inner img').eq(2).height();
-//        $('.carousel-control').css('line-height', $height + 'px');
-//    });
+    $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+    $(window).resize(function() {
+        $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+    });
+    $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+    $(window).resize(function() {
+        $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+    });
 </script>
 </body>
 </html>
