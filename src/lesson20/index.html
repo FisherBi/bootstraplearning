@@ -28,9 +28,9 @@
             <ul class="nav navbar-nav navbar-right"
                 style="margin-top:0;">
                 <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+                <li><a href="information.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+                <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
             </ul>
         </div>
     </div>
@@ -185,11 +185,15 @@ right">
     $('#myCarousel').carousel({
         interval : 3000,
     });
-    $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+    $(window).load(function () {
+        $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+    });
     $(window).resize(function() {
         $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
     });
-    $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+    $(window).load(function () {
+        $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+    });
     $(window).resize(function() {
         $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
     });
